@@ -1,0 +1,42 @@
+body{
+    background: linear-gradient(180deg, #B6F4A1 -43.33%, #6FF0B2 109.21%);
+}
+.certificateSvg{
+
+}
+.certificates{
+    margin: 5% 0;
+}
+.files{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+.files p{
+    display: flex;
+    align-items: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.files p a{
+    color: #235E3E;
+    margin-left: 50px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+@media (max-width: 700px) {
+    .certificates{
+        margin: 0;
+    }
+    .certificateSvg{
+        display: none;
+    }
+    .files *{
+        margin: 25px 0;
+    }
+}

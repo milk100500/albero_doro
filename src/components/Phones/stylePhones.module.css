@@ -1,0 +1,56 @@
+.phones{
+    display: flex;
+    padding: 0 30px;
+    align-items: flex-end;
+}
+.numbers{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.numbers::after{
+    position: absolute;
+    top: 60px;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    color: #235E3E;
+    content: "ПН-ВС:  8:00 - 18:00";
+}
+.numbers a{
+    color: #235E3E;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.phones_content{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1124px) {
+    .phones{
+        padding: 0;
+    }
+}
+
+@media (max-width: 955px) {
+    .phones{
+
+    }
+    .numbers a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 933px) {
+    .phones{
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .phones{
+        display: none;
+    }
+}

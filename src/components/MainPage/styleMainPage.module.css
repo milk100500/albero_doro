@@ -1,0 +1,127 @@
+body{
+    background: linear-gradient(0deg, #C1F499 0%, #6FF0D1 104.71%);
+    background-repeat: no-repeat;
+}
+.container{
+    position: relative;
+    width: 1250px;
+    margin: 0 178px;
+}
+.windows{
+    position: relative;
+}
+.windows::before{
+    position: absolute;
+    content: url("../../contentForComponents/svg/line1.svg");
+    left: 720px;
+    top: 430px;
+}
+.windows::after{
+    position: absolute;
+    content: url("../../contentForComponents/svg/line2.svg");
+    left: -230px;
+    top: 1140px;
+}
+.windowLeft{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 295px;
+}
+.windowLeftContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 825px;
+}
+.windowRight{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 100px;
+}
+.windowRight::after{
+    content: url("../../contentForComponents/svg/circles3.svg");
+    position: absolute;
+    left: 505px;
+    top: 300px;
+}
+.windowRightContent{
+    display: flex;
+    flex-direction: column;
+}
+.windowLeftContent::after{
+    content: url("../../contentForComponents/svg/circles2.svg");
+    position: absolute;
+    left: 835px;
+    top: 195px
+}
+.footer{
+    position: relative;
+    margin-top: 300px;
+}
+.footer::before{
+    position: absolute;
+    content: url("../../contentForComponents/svg/line3.svg");
+    left: 1118px;
+    top: -450px;
+}
+
+@media (max-width: 1440px) {
+    .container{
+        width: 1200px;
+    }
+    .footer::before{
+        width: 300px;
+        left: 1060px;
+    }
+    .windows::before{
+        top: 360px;
+        left: 600px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container{
+        width: 800px;
+        margin: 0 auto;
+    }
+    .footer{
+        margin-top: 100px;
+    }
+    .footer::before{
+        display: none;
+    }
+    .windowLeftContent::after{
+        display: none;
+    }
+    .windowRight::after{
+        display: none;
+    }
+    .windows::before{
+        display: none;
+    }
+    .windows::after{
+        display: none;
+    }
+    .windowLeft{
+        margin-top: 275px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container{
+        width: 100%;
+    }
+    .windowLeft{
+        margin-top: 25px;
+    }
+    .windowRight{
+        margin-top: 25px;
+    }
+    .footer{
+        margin-top: 25px;
+    }
+}
